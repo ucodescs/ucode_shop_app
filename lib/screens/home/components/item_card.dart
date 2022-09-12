@@ -4,7 +4,7 @@ import 'package:ucode_shop_app/models/product.dart';
 
 class ItemCard extends StatelessWidget {
   final Product product;
-  final Function press;
+  final Function() press;
   const ItemCard({
     Key? key,
     required this.product,
@@ -13,8 +13,8 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => press,
+    return GestureDetector(
+      onTap: press,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

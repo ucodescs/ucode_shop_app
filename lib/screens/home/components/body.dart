@@ -36,16 +36,17 @@ class Body extends StatelessWidget {
                 crossAxisSpacing: kDefaultPadding,
               ),
               itemBuilder: (context, index) => ItemCard(
-                    product: products[index],
-                    press: () => Navigator.push(
+                  product: products[index],
+                  press: () {
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => DetailsScreen(
                           product: products[index],
                         ),
                       ),
-                    ),
-                  )),
+                    );
+                  })),
         )),
       ],
     );

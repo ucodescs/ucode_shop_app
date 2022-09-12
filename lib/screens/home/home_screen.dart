@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ucode_shop_app/screens/home/components/body.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../constants.dart';
+import 'components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
