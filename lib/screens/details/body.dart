@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:ucode_shop_app/constants.dart';
 import 'package:ucode_shop_app/models/product.dart';
 
